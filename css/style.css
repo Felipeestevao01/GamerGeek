@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bungee+Spice&family=Crimson+Text:ital,wght@1,600&family=Dancing+Script:wght@400;700&family=Gentium+Plus:ital,wght@0,700;1,400&family=Inter:wght@500&family=Kanit:wght@200&family=Pacifico&family=Roboto:wght@300&family=Shadows+Into+Light&family=Teko:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: black;
+    position: center;
+    background-repeat:inherit;
+}
+
+/*Cabeçalho*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Bungee Spice', cursive;
+    border-bottom: 1px solid rgb(39, 38, 38);
+    background: linear-gradient(90deg,rgb(201, 11, 11) 0%,rgb(27, 25, 37) 50%,rgb(209, 212, 212) 100%);
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.logo2 {
+    margin-left: 30px;
+    align-items: center;
+    Width: 192px;
+    Height: 55px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.decoration__menu {
+    height: 120px;
+}
+
+ol {
+    display: flex;
+    align-items: center;
+}
+
+.background__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu__nav ol {
+    list-style-type: none;
+}
+
+.menu__nav li {
+    border: solid 2px transparent;
+    border-radius: 24px;
+    align-items: center;
+    justify-items: center;
+    transition: all 1.2s;
+}
+
+.menu__nav a {
+    font-size: 24px;
+    text-decoration: none;
+    padding: 36px;
+}
+
+.menu__nav li:hover {
+    transform: scale(1.25);
+    border: solid 3px rgb(22, 24, 27);
+    background-size: cover;
+}
+
+
+/*Fim cabeçalho*/
+
+/*Banner*/
+.banner__gamer {
+    height: 200px;
+    background-image: url(../img/banner__spider_man.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 10em black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.banner__frase{
+    position:absolute;
+    color: rgb(173, 169, 169);
+    font-size: 24px;
+    margin-top: -150px;
+    margin-left: 200px;
+    font-family: 'Ms Madi', cursive;
+}
+
+.banner__frase:hover{
+    transition: all 1.2s;
+    transform: scale(1.25);
+    background-color: #8a85858c;
+    border-radius: 10px;
+}
+/*Banner*/
+
+
+/*Cards*/
+.cards__frase {
+    font-family: 'Bungee Spice', cursive;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+
+.cards__jogos {
+    display: flex;
+    flex-direction: column;
+}
+
+.container___jogos {
+    background: linear-gradient(90deg,rgba(134, 41, 41, 0.582) 0%,rgb(27, 25, 37) 50%,rgb(209, 212, 212) 100%);
+    gap: 70px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50px;
+    box-shadow: inset 5em 5em 20em 20em black;
+}
+
+.card__jogo {
+    opacity: 35%;
+    Width: 340px;
+    Height: 412px;
+    border-radius: 32px;
+    background-color: rgb(229, 229, 229);
+    box-shadow: rgb(111, 130, 150) 0px 20px 30px -10px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    overflow-y: scroll;
+    scroll-behavior: initial;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.container__text h4 {
+    font-size: 24px;
+    text-align:center;
+}
+
+.container__text p {
+    padding: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.card__jogo:hover {
+    transform: scale(1.20);
+    transition: 2s;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    opacity: 100%;
+}
+
+.button__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.05);
+    transition: 2s;
+    text-decoration: none;
+    color:white;
+}
+
+button {
+    border-radius: 5%;
+    background-color: rgb(77, 77, 77);
+    Width: 136px;
+    Height: 34px;
+}
+
+button a {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 12px 12px;
+    color: white;
+
+}
+
+button:hover {
+    transition: 2s;
+    text-decoration: none;
+    background-color: rgb(253, 251, 251);
+    color:black;
+    
+}
+
+button a:hover {
+    transition: 2s;
+    color: black;
+}
+
+.background__card{
+    Width: 308px;
+    Height: 230px;
+    background-position: center;
+    background-size: 308px;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+}
+
+.container__backgroundjogo1 {
+    background-image: url(../img/backgroundjogo1.jpg);
+}
+
+.container__backgroundjogo2 {
+    background-image: url(../img/backgroundjogo2.jpg);
+}
+
+.container__backgroundjogo3 {
+    background-image: url(../img/backgroundjogo3.jpg);
+}
+
+.container__backgroundjogo4 {
+    background-image: url(../img/backgroundjogo4.jpg);
+}
+
+.container__backgroundjogo5 {
+    background-image: url(../img/backgroundjogo5.jpg);
+}
+
+.container__backgroundjogo6 {
+    background-image: url(../img/backgroundjogo6.jpg);
+}
+
+.container__backgroundjogo7 {
+    background-image: url(../img/backgroundjogo7.jpg);
+}
+
+.container__backgroundjogo8 {
+    background-image: url(../img/backgroundjogo8.jpg);
+}
+/*Fim Cards*/
+
+/*Rodapé*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(229, 229, 229);
+}
+
+.dev__group {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.student {
+    text-align: center;
+}
+
+footer img {
+    gap: 20px;
+    border-radius: 4px;
+    width: 60px;
+}
+
+.name__student {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.links {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__img:hover {
+    transition: all 1.2s;
+    margin-right: 12px;
+    -webkit-transform: rotateZ(360deg);
+    transform: rotatez(360deg);
+}
+/*Fim rodapé*/
+
+
+/*Pagina Detail Jogo Final fantasy*/
+
+
+.detail__jogo_cover {
+    height:534px;
+    margin: 50px;
+    background-image: url(../img/background__detailjogo1banner.jpg);
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.detail__title {
+    color:white; 
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.detail__text {
+    color:white;
+    padding: 40px 200px;
+    line-height: 27px;
+    font-size: 16px;
+}
+
+.creators {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.creator_jogo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.creator_jogo h3 {
+    padding: 20px;
+    font-size: 1.6rem;
+}
+
+.creator_jogo p {
+    font-size: .8rem;
+}
+
+.trailer {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+
+}   
+
+/*Pagina Detail Jogo The last of us*/
+
+.detail__jogo2_cover {
+    height:534px;
+    margin: 50px;
+    background-image: url(../img/background__detailjogo2banner.jpg);
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+} 
+
+/*Pagina Detail jogo God of War*/
+
+.detail__jogo3_cover {
+    height:534px;
+    margin: 50px;
+    background-image: url(../img/background__detailjogo3banner.jpg);
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+} 
+
+/*Pagina Detail jogo Resident Evil 2*/
+
+.detail__jogo4_cover {
+    height:534px;
+    margin: 50px;
+    background-image: url(../img/background__detailjogo4banner.jpg);
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+} 
+
+/*Pagina Detail jogo The witcher 3*/
+
+.detail__jogo5_cover {
+    height:534px;
+    margin: 50px;
+    background-image: url(../img/background__detailjogo5banner.jpg);
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+} 
+
+/*Pagina Detail jogo Ghost of tsushima*/
+
+.detail__jogo6_cover {
+    height:534px;
+    margin: 50px;
+    background-image: url(../img/background__detailjogo6banner.jpg);
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+} 
+
+/*Pagina Detail jogo Uncharted 4*/
+
+.detail__jogo7_cover {
+    height:534px;
+    margin: 50px;
+    background-image: url(../img/background__detailjogo7banner.jpg);
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+} 
+
+/*Pagina Detail jogo Uncharted 4*/
+
+.detail__jogo8_cover {
+    height:534px;
+    margin: 50px;
+    background-image: url(../img/background__detailjogo8banner.jpg);
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+} 
+
+/*Pagina Login*/
+
+
+.background_main_login {
+  background-image: url(../img/Background__menu.png);
+}
+
+.form_imageformimage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.image_spidersense img {
+    height: 300px;
+}
+
+.form_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.label_login {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.label_login input {
+    height: 35px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+.button_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.05);
+    transition: 2s;
+    text-decoration: none;
+    color:white;
+    border-radius: 5%;
+    Width: 136px;
+    Height: 34px;
+}
+
+.button_login a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 28px 12px 28px;
+    color: white;
+}
+
+.button_login:hover {
+    transition: 2s;
+    text-decoration: none
+}
+
+button a:hover {
+    transition: 2s;
+    color: black;
+}
+
+/* Css Login */
+
+.login_logo{
+    align-items: flex-start;
+    text-align: end;
+
+}
+
+.body_img{
+    background-image: url(../img/background-login-spider.jpg);
+    background-size: 100%;
+}
+
+.background_main_login {
+
+    background-repeat: no-repeat;  
+    
+}
+
+.img_astro{
+    width: 400px;
+}
+
+.form_login {
+    display: flex;
+    gap: 13px;
+    background-image: url(../img/background-login.png);
+    padding: 32px;
+    border-radius: 24px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: end;
+    align-self: flex-end;   
+}
+
+.form_imageformimage{
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+
+
+.label_login {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-weight: 600;
+}
+
+.label_login input {
+    height: 35px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+.button_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.05);
+    transition: 2s;
+    text-decoration: none;
+    color:white;
+    border-radius: 5%;
+    background-color: rgb(177, 133, 151);
+    Width: 136px;
+    Height: 34px;
+}
+
+.button_login a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 28px 12px 28px;
+    color: white;
+}
+
+.button_login:hover {
+    transition: 2s;
+    text-decoration: none;
+    background: rgb(21, 21, 22);
+    color:rgb(255, 253, 253);
+}
+
+button a:hover {
+    transition: 2s;
+    color: rgb(255, 254, 254);
+}
+
+
+
+
+/*Responsividade mobile*/
+@media (max-width: 425px) {
+
+    nav {
+        display: none;
+    }
+
+    .decoration__menu{
+        width: 150px;
+    }
+
+    .banner__frase {
+        font-size: 12px;
+        margin-right: 50px;
+    }
+
+
+
+    .detail__text {
+        padding: 40px;
+        line-height: 27px;
+        font-size: 16px;
+    }
+
+    .trailer {
+        height: 300px;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+    }  
+
+    .login_logo {
+        display: none;
+    }
+
+    .background_main_login {
+        background-position: center;
+    }
+
+    .logo_effect_login {
+        display: block;
+    }
+
+    .marvel_logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+}
+/*Responsividade mobile*/
+
+/*Responsividade Tablet*/
+@media (max-width: 768px) {
+
+    nav {
+        display: none;
+    }
+
+    .container___jogos {
+        box-shadow: inset 1em 10em 20em 10em black;
+    }
+
+    .dev__group {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo_effect_login {
+        display: block;
+    }
+
+    .login_logo {
+        display: none;
+    }
+
+    .background_main_login {
+        background-position: center;
+    }
+
+    .marvel_logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+}
+/*Responsividade Tablet*/
